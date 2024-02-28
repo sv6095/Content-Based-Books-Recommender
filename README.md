@@ -3,12 +3,16 @@ the recommender is trained by an array of books, it can tell the list of books w
 
 
 Training Process
+
 Preprocessing Documents:
 Documents are preprocessed by tokenizing, removing HTML tags, converting to lowercase, extracting unigrams, bigrams, and trigrams.
+
 Creating Document Vectors:
 TF-IDF is applied to the preprocessed documents to create word vectors for each document.
+
 Calculating Similarities:
 Cosine similarity is calculated between document vectors to determine similarities.
+
 Validation and Control
 The class validates options such as ensuring integer values for maxVectorSize and maxSimilarDocuments, and a number between 0 and 1 for minScore.
 It validates that documents are in the correct format with 'id' and 'content' fields.
